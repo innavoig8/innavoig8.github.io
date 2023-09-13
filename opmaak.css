@@ -3,7 +3,7 @@ ul{
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: rgb(17, 0, 255);
+    background-color: blue;
 }
 
 li {
@@ -12,13 +12,13 @@ li {
 
 li a {
     display: block;
-    color: rgb(17, 0, 255);
+    color: blue;
     text-align: center;
-    padding: none;
+    padding: 14px 16px;
     text-decoration: none;
 }
 
 /* change the link colour to #111 (black) on hover */
 li a:hover{
-    background-color: black;
+    background-color: cyan;
 }
