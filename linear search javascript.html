@@ -17,3 +17,41 @@
             <li><a href="CPU.html">CPU</a></li>
         </ul>
 
+         <script>
+    var zoekGetal, i;
+    var getallenRij = createArray(10);
+
+    for (i = 0; i = 9; i++) {
+        getallenRij[i] = Math.floor(Math.random() * 100);
+    }
+
+    // er zijn 10 willekeurige getallen onder de 100 geselecteerd
+    window.alert("Welk getal wil je zoeken: ");
+    zoekGetal = Number(window.prompt('Enter a value for zoekGetal'));
+    i = 0;
+    while (getallenRij[i] != zoekGetal && i < 9) {
+        i = i + 1;
+    }
+    if (i == 9) {
+        if (zoekGetal == getallenRij[9]) {
+            window.alert(zoekGetal.ToString() + " staat op plek " + i);
+
+            // er wordt gegeven op welke plek in de tabel het getal staat
+            window.alert("je hebt het getal gevonden");
+        } else {
+            window.alert("Getal niet gevonden.");
+
+            // het getal staat niet in de tabel
+        }
+    } else {
+        window.alert(zoekGetal.ToString() + " staat op plek " + i);
+
+        // er wordt gegeven op welke plek in de tabel het getal staat
+        window.alert("je hebt het getal gevonden");
+    }
+
+    // je hebt nu het getal gevonden doormiddel van lineaire zoeken
+}        </script>
+     </body>
+</head>
+
